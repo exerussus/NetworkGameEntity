@@ -1,0 +1,26 @@
+{
+  "name": "com.exerussus.networkgameentity",
+  "version": "1.0.0",
+  "displayName": "NetworkGameEntity",
+  "description": "Система инициализации сущностей и синхронизация данных ECS на базе Ecs-Lite и FishNet.",
+  "unity": "2020.3",
+  "dependencies": {},
+  "keywords": [
+    "leoecslite",
+    "leoecs",
+    "ecs",
+    "performance",
+    "1extensions",
+    "1easyecs",
+    "networkgameentity",
+    "exerussus"
+  ],
+  "author": {
+    "name": "Exerussus",
+    "email": "solovyov.production@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exerussus/NetworkGameEntity.git"
+  }
+}
