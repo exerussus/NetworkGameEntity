@@ -1,6 +1,6 @@
 {
   "name": "com.exerussus.networkgameentity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "NetworkGameEntity",
   "description": "Система инициализации сущностей и синхронизация данных ECS на базе Ecs-Lite и FishNet.",
   "unity": "2020.3",
