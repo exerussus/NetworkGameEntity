@@ -35,7 +35,7 @@ namespace Exerussus.GameEntity.Core
         
         public void InvokeOnServerActivate(int entity) 
         { 
-            if (!IsActivated) return;
+            if (IsActivated) return;
             OnServerActivate(GameEntity.EntityPack.Id);
             IsActivated = true;
         }

@@ -52,7 +52,6 @@ namespace Exerussus.GameEntity.Core
             Application.quitting += () => IsQuitting = true;
             gameEntityComponents = GetComponents<INetworkGameEntityComponent>().ToList();
             _serverSpawned = true;
-            
             if (gameEntityComponents is not {Count: > 0})
             {
                 gameEntityComponents = new List<INetworkGameEntityComponent>(GetComponents<INetworkGameEntityComponent>());
