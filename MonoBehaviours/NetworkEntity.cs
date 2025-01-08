@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Exerussus._1Attributes;
-using Exerussus._1Extensions.SmallFeatures;
 using Exerussus.NetworkGameEntity.Core;
 using FishNet;
 using FishNet.Connection;
