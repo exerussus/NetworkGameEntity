@@ -1,12 +1,9 @@
 using System.Collections.Generic;
-using System.Linq;
-using Exerussus._1EasyEcs.Scripts.Core;
 using Exerussus._1EasyEcs.Scripts.Custom;
 using Exerussus._1Extensions.SignalSystem;
 using Exerussus._1Extensions.SmallFeatures;
 using FishNet;
 using Leopotam.EcsLite;
-using UnityEditor;
 using UnityEngine;
 
 namespace Exerussus.NetworkGameEntity.Core
@@ -77,17 +74,17 @@ namespace Exerussus.NetworkGameEntity.Core
 
 #if UNITY_EDITOR
 
-    [InitializeOnLoad]
+    [UnityEditor.InitializeOnLoad]
     public static class StaticCleaner
     {
         static StaticCleaner()
         {
-            EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
+            UnityEditor.EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
         }
 
-        private static void OnPlayModeStateChanged(PlayModeStateChange state)
+        private static void OnPlayModeStateChanged(UnityEditor.PlayModeStateChange state)
         {
-            if (state == PlayModeStateChange.ExitingPlayMode || state == PlayModeStateChange.ExitingEditMode)
+            if (state == UnityEditor.PlayModeStateChange.ExitingPlayMode || state == UnityEditor.PlayModeStateChange.ExitingEditMode)
             {
                 NetworkGameEntityStarter.ClearInstance();
             }
