@@ -6,7 +6,7 @@ using FishNet;
 using FishNet.Connection;
 using FishNet.Object;
 using Leopotam.EcsLite;
-using Plugins.Exerussus._1EasyEcs.Scripts.Extensions;
+using Exerussus._1EasyEcs.Scripts.Extensions;
 using UnityEngine;
 
 namespace Exerussus.GameEntity.Core
