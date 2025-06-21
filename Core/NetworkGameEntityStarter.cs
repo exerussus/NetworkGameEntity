@@ -38,7 +38,7 @@ namespace Exerussus.NetworkGameEntity.Core
             return (T)Instance;
         }
 
-        protected override EcsGroup[] GetGroups()
+        protected override EcsGroup[] CreateGroups()
         {
             var groups = new List<EcsGroup> { new NetworkGameEntityGroup() };
             
